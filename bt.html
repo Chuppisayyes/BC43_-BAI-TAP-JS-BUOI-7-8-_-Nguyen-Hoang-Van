@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Bài Tập JS Buổi 7 & 8</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+   
+    <!-- Font Roboto  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+          href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+          rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+  integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- link css -->
+    <link rel="stylesheet" href="./CSS/bt.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="alert alert-warning">
+            <div class="box">
+                <a href="./index.html" style="text-decoration: none;" class=" alert alert-info d-inline-block"> BACK TO HOME</a>
+                <h1>Bài Tập JS Buổi 7 & 8</h1>
+                <input class="input" name="text" placeholder="Nhập số n" type="number" id="nhap-so-n">
+                <button class="button-title" id="them-so">
+                    <span>Thêm số</span>
+                </button>
+            </div>
+            <div class="box-bottom">
+                <i class="fa-solid fa-arrow-right"></i>
+                Giá trị Nhập vào : <span id="hien-thi-gia-tri-da-nhap"></span>
+            </div>
+            <div class="function-bt">
+                <div class="form-group">
+                    <span>1.Tổng số Dương</span>
+                    <button class = "button-bt" id="tinh-tong">Tính tổng</button>
+                    <div class="alert alert-success">
+                        Kết quả: <span id="ket-qua-cau-1"></span>
+                    </div>
+                    <hr>
+                </div>
+                <div class="form-group">
+                    <span>2.Đếm số Dương</span>
+                    <button class = "button-bt" id="dem-so">Đếm số</button>
+                    <div class="alert alert-success">
+                        Kết quả: <span id="ket-qua-cau-2"></span>
+                    </div>
+                    <hr>
+                </div>
+                <div class="form-group">
+                    <span>3.Tìm số nhỏ nhất</span>
+                    <button class = "button-bt" id="tim-min">Tìm số nhỏ nhất</button>
+                    <div class="alert alert-success">
+                        Kết quả: <span id="ket-qua-cau-3"></span>
+                    </div>
+                    <hr>
+                </div>
+                <div class="form-group">
+                    <span>4.Tìm số Dương nhỏ nhất</span>
+                    <button class = "button-bt" id="tim-min-duong">Tìm số dương nhỏ nhất</button>
+                    <div class="alert alert-success">
+                        Kết quả: <span id="ket-qua-cau-4"></span>
+                    </div>
+                    <hr>
+                </div>
+                <div class="form-group">
+                    <span>5.Tìm số chẵn cuối cùng</span>
+                    <button class = "button-bt" id="tim-so-chan">Tìm số</button>
+                    <div class="alert alert-success">
+                        Kết quả: <span id="ket-qua-cau-5"></span>
+                    </div>
+                    <hr>
+                </div>
+                <div class="form-group">
+                    <span>6.Đổi chỗ</span><br>
+                    <input type="number" id="vi-tri-1" placeholder="vị trí 1" class="form-control w-25 d-inline-block">
+                    <input type="number" id="vi-tri-2" placeholder="vị trí 2" class="form-control w-25 d-inline-block">
+                    <button class = "button-bt" id="doi-vi-tri">Đổi chỗ</button>
+                    <div class="alert alert-success">
+                        Kết quả: <span id="ket-qua-cau-6"></span>
+                    </div>
+                    <hr>
+                </div>
+                <div class="form-group">
+                    <span>7.Sắp xếp tăng dần</span>
+                    <button class = "button-bt" id="sap-xep">Sắp xếp</button>
+                    <div class="alert alert-success">
+                        Kết quả: <span id="ket-qua-cau-7"></span>
+                    </div>
+                    <hr>
+                </div>
+                <div class="form-group">
+                    <span>8.Tìm số nguyên tố đầu tiên</span>
+                    <button class = "button-bt" id="tim-so-nguyen-to">Tìm số nguyên tố</button>
+                    <div class="alert alert-success">
+                        Kết quả: <span id="ket-qua-cau-8"></span>
+                    </div>
+                    <hr>
+                </div>
+                <div class="form-group">
+                    <span>9.Đếm số nguyên</span>
+                    <button class = "button-bt" id="dem-so-nguyen">Đếm số nguyên</button>
+                    <div class="alert alert-success">
+                        Kết quả: <span id="ket-qua-cau-9"></span>
+                    </div>
+                    <hr>
+                </div>
+                <div class="form-group">
+                    <span>10.So sánh số lượng số âm và dương</span>
+                    <button class = "button-bt" id="so-sanh">So sánh</button>
+                    <div class="alert alert-success">
+                        Kết quả: <span id="ket-qua-cau-10"></span>
+                    </div>
+                    <hr>
+                </div>
+
+            </div>
+        </div>
+    </div>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  <script src="./JS/bt.js"></script>
+</body>
+
+</html>

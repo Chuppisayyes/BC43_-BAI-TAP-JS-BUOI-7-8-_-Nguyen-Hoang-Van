@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    list-style: none;
+}
+body{
+    background: #fafafa;
+}
+.container{
+    margin-top: 100px;
+}
+.title{
+    padding-left: 50px;
+    position: relative;
+    top: 15px;
+}
+.title h1{
+    font-family: 'Pacifico', cursive;
+    font-style: oblique;
+    font-size: 30px;
+    color: transparent;
+    background: linear-gradient(to left, #FA709A 0%, #ff8a80 100%);
+    -webkit-background-clip: text;
+    letter-spacing: 10px;
+}
+.title hr{
+    background-color: #FEE140;
+    background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);    
+    border-radius: 10px;
+    width: 150px;
+    height: 5px;
+    border: 0;
+    opacity: 1;
+    position: relative;
+    right: 10px;
+    bottom: 10px;
+}
+.box{
+    padding: 30px 20px 5px 80px;
+    border-radius: 5px;
+    background-image: linear-gradient(315deg, #fdfcfb 0%, #e2d1c3 100%);
+    /* border: 1px solid #795548; */
+    box-shadow: 5px 5px 1000px rgba(242, 198, 136, 0.8);
+}
+.box-top h1{
+    color: #795548;
+    letter-spacing: 5px;
+    font-size: 80px;
+    opacity: 0.8;
+}
+.box-top hr {
+    width: 90%;
+}
+.box-bottom{
+    padding-left: 10px;
+}
+.box-bottom i{
+    margin: 20px 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 15px;
+    border: 2px solid #a1887f ;
+    color: #8d6e63;
+    transition: 0.5s;
+}
+.box-bottom span{
+    font-size: 23px;
+    letter-spacing: 1px;
+    margin-left: 150px;
+}
+
+.box-bottom i:hover{
+    color: #ff8a80;
+    border: 2px solid #ff8a80 ;
+}
+/* Button */
+.button {
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    transition: all 1000ms;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    position: relative;
+    left: 500px;
+    border: 2px solid #6d4c41;
+}
+button a {
+    width: 100%;
+    text-decoration: none;
+    color: #6d4c41;
+    transition: all 1000ms;
+}
+button:hover {
+    transform: scale(1.1);
+    color: #ffffff;
+    border: 2px solid #fffde7;
+    box-shadow: 4px 5px 17px -4px #fff59d;
+}
+button a:hover{
+    transform: scale(1.1);
+    color: #ffffff;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #fff176;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+button:hover::before {
+  width: 250%;
+}
